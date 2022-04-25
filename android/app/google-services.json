@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "844252760567",
+    "project_id": "money-mouth-ac565",
+    "storage_bucket": "money-mouth-ac565.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844252760567:android:ece7efd36a80d05692c6f2",
+        "android_client_info": {
+          "package_name": "com.moneymouth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844252760567-a2dkr58jpp6tgh12enfc8j7diraqidfq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJTxt08EtVLNVd9MKRlBZO1_-sB6qfKiA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844252760567-a2dkr58jpp6tgh12enfc8j7diraqidfq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
