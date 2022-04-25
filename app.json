@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "money-mouth",
+    "slug": "money-mouth",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
