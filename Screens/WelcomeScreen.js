@@ -6,9 +6,9 @@
     Screen to welcome function to ask the user to login or signup
 */
 
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export const WelcomeScreen = () => {
   return (
@@ -24,25 +24,25 @@ export const WelcomeScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#ccc",
-    alignItems: "center",
-    justifyContent: "flex-start",
-    flexDirection: "column",
+    backgroundColor: '#ccc',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    flexDirection: 'column',
   },
   titleTextContainer: {
     flex: 0.45,
-    alignItems: "center",
+    alignItems: 'center',
     //justifyContent: "center",
-    justifyContent: "flex-end",
+    justifyContent: 'flex-end',
     //backgroundColor: "red",
   },
   titleTextTop: {
-    fontFamily: "Arial",
+    fontFamily: 'Arial',
     fontSize: 64,
     letterSpacing: 10,
   },
   titleTextBottom: {
-    fontFamily: "Arial",
+    fontFamily: 'Arial',
     fontSize: 64,
     letterSpacing: 5,
   },
