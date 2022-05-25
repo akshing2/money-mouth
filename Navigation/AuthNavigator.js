@@ -9,7 +9,7 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 // screens for navigator
-import { SplashScreen } from "../Screens/SplashScreen";
+import { WelcomeScreen } from "../Screens/WelcomeScreen";
 import { LoginScreen } from "../Screens/LoginScreen";
 import { SignupScreen } from "../Screens/SignupScreen";
 
@@ -18,12 +18,12 @@ const authStack = createNativeStackNavigator();
 export const AuthNavigator = ({ navigation }) => {
   return (
     <authStack.Navigator
-      initialRouteName="SplashScreen"
+      initialRouteName="WelcomeScreen"
       screenOptions={{
         headerShown: false,
       }}
     >
-      <authStack.Screen name="SplashScreen" component={SplashScreen} />
+      <authStack.Screen name="SplashScreen" component={WelcomeScreen} />
       <authStack.Screen name="LoginScreen" component={LoginScreen} />
       <authStack.Screen name="SignupScreen" component={SignupScreen} />
     </authStack.Navigator>
