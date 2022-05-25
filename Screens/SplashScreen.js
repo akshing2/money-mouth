@@ -1,17 +1,23 @@
+/*
+    Author: Akshin Goswami
+    Date:   25/05/2022
+
+    @brief: 
+    Screen to welcome function
+*/
+
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-import { AuthNavigator } from "./Navigation/AuthNavigator";
-import { NavigationContainer } from "@react-navigation/native";
-
-export default function App() {
+export const SplashScreen = () => {
   return (
-    <NavigationContainer>
-      <AuthNavigator />
-    </NavigationContainer>
+    <View style={styles.container}>
+      <Text>This is the SPlash Screen</Text>
+      <StatusBar style="auto" />
+    </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
