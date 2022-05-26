@@ -7,15 +7,33 @@
 */
 
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { StandardButton } from '../Components/StandardButton';
 
-export const WelcomeScreen = () => {
+export const WelcomeScreen = ({ navigation }) => {
+  const loginBtnOnPress = () => {
+    console.log('Pressed Login button!');
+    navigation.navigate('LoginScreen');
+  };
+
+  const signupBtnOnPress = () => {
+    console.log('Pressed Signup Button!');
+    navigation.navigate('SignupScreen');
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.titleTextContainer}>
         <Text style={styles.titleTextTop}>MONEY</Text>
         <Text style={styles.titleTextBottom}>MOUTH!</Text>
+      </View>
+
+      <View style={styles.buttonContainer}>
+        <StandardButton label={'Log In'} onPress={loginBtnOnPress} />
+        <TouchableOpacity onPress={signupBtnOnPress}>
+          <Text style={styles.clickableText}> Sign Up </Text>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
@@ -24,7 +42,7 @@ export const WelcomeScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ccc',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'flex-start',
     flexDirection: 'column',
@@ -36,6 +54,13 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     //backgroundColor: "red",
   },
+  buttonContainer: {
+    flex: 0.4,
+    alignItems: 'center',
+    //justifyContent: "center",
+    justifyContent: 'center',
+    //backgroundColor: "red",
+  },
   titleTextTop: {
     fontFamily: 'Arial',
     fontSize: 64,
@@ -45,5 +70,11 @@ const styles = StyleSheet.create({
     fontFamily: 'Arial',
     fontSize: 64,
     letterSpacing: 5,
+  },
+  clickableText: {
+    fontFamily: 'Arial',
+    fontSize: 24,
+    textDecorationLine: 'underline',
+    padding: 30,
   },
 });
