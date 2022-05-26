@@ -12,6 +12,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { StandardTextInput } from '../Components/StandardTextInput';
+import { StandardButton } from '../Components/StandardButton';
 
 export const LoginScreen = ({ navigation }) => {
   // states for forms
@@ -49,6 +50,8 @@ export const LoginScreen = ({ navigation }) => {
           keyboardType={'default'}
           secureTextEntry={true}
         />
+
+        <StandardButton label={'Log In'} />
       </View>
     </SafeAreaView>
   );
@@ -86,6 +89,7 @@ const styles = StyleSheet.create({
     paddingBottom: 30,
   },
   formInputContainer: {
-    flex: 0.55,
+    flex: 0.45,
+    alignItems: 'center',
   },
 });

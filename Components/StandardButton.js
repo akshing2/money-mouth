@@ -16,7 +16,7 @@ export const StandardButton = ({ label, onPress }) => {
 const styles = StyleSheet.create({
   button: {
     backgroundColor: '#70E2EA',
-    //flex: 1,
+    width: 135,
     height: 50,
     justifyContent: 'center',
     padding: 10,
